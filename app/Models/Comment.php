@@ -11,4 +11,8 @@ class Comment extends Model
         'content'
     ];
 
+    protected $casts = [
+      'created_at' => 'datetime:H:i d-m-Y'
+    ];
+
 }

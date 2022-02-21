@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\CommentController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-Route::get('/', [CommentController::class, 'index'])->name('comment.index');
-Route::post('/', [CommentController::class, 'store'])->name('comment.store');
+Route::get('/{page}', HomeController::class)->where('page', '.*');
