@@ -11,5 +11,7 @@ class CommentService
     {
         $data = $request->validated();
         $comment->fill($data)->save();
+
+        return $comment;
     }
 }

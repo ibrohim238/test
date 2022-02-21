@@ -7,7 +7,7 @@
                 <h1 class="text-2xl pt-5">Комментарии</h1>
             </nav>
             <div>
-                <router-link :to="{ name: home }">
+                <router-link :to="{ name: 'home' }">
                     <img class="w-32" :src="image_src" alt="">
                 </router-link>
             </div>
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-    name: "Header",
+    name: "VHeader",
     data() {
         return {
             image_src: '/favicon.png'

@@ -16,14 +16,13 @@ import IndexComponent from "../components/comment/IndexComponent";
 import CreateComponent from "../components/comment/CreateComponent";
 
 export default {
-    name: "CommentComponent",
+    name: "Home",
     components: {
         VFooter,
         VHeader,
         IndexComponent,
         CreateComponent,
     }
-
 }
 </script>
 

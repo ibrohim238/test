@@ -16,7 +16,8 @@
 </head>
 <body class="dark:bg-gray-800 bg-1 h-screen antialiased leading-none font-sans">
     <div id="app">
-        <Index></Index>
+
+        @yield('content')
     </div>
 </body>
 </html>

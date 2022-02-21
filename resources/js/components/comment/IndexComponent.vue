@@ -26,7 +26,7 @@ export default {
         getComments() {
             axios.get('/api/comments')
                 .then(responce => {
-                    this.comments = responce.data
+                    this.comments = responce.data.data
                 })
         },
     }

@@ -9,6 +9,6 @@ export default new VueRouter({
     routes: [
         {
             path: '/', component: Home, name: 'home'
-        }
+        },
     ]
 })
