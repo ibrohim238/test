@@ -16,11 +16,7 @@
 </head>
 <body class="dark:bg-gray-800 bg-1 h-screen antialiased leading-none font-sans">
     <div id="app">
-        <x-layout-parts.header />
-
-        @yield('content')
-
-        <x-layout-parts.footer />
+        <Index></Index>
     </div>
 </body>
 </html>
