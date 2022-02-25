@@ -2,14 +2,13 @@
 
 namespace App\Services;
 
-use App\Http\Requests\CommentRequest;
+use App\Dto\CommentDto;
 use App\Models\Comment;
 
 class CommentService
 {
-    public function save(Comment $comment, CommentRequest $request)
+    public function save(Comment $comment, CommentDto $dto)
     {
-        $data = $request->validated();
-        $comment->fill($data)->save();
+        $comment->fill($dto->toArray())->save();
     }
 }

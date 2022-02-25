@@ -10,5 +10,4 @@ class Comment extends Model
         'nickname',
         'content'
     ];
-
 }
