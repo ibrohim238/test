@@ -10,8 +10,6 @@ docker exec app bash
 
 composer i
 
-npm i && npm run dev
-
 #При следующем запуске
 
 docker-compose up -d

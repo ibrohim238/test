@@ -11,13 +11,16 @@
 
 
 namespace App\Models{
-/**
+
+    use Carbon\Carbon;
+
+    /**
  * App\Models\Comment
  *
  * @property int $id
  * @property string $nickname
  * @property string $content
- * @property \datetime|null $created_at
+ * @property Carbon $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @method static \Illuminate\Database\Eloquent\Builder|Comment newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Comment newQuery()

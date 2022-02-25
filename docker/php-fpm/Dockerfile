@@ -35,10 +35,6 @@ RUN docker-php-ext-configure opcache --enable-opcache && \
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# Install nodejs
-RUN curl -sL https://deb.nodesource.com/setup_17.x  | bash -
-RUN apt-get -y install nodejs
-
 ENV PATH="$PATH:/src/vendor/bin"
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 COPY composer.* ./

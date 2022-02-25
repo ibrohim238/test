@@ -5,8 +5,8 @@ namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 
 /**
- * @property-read $nickname
- * @property-read $content
+ * @property-read string $nickname
+ * @property-read string $content
 */
 class CommentRequest extends FormRequest
 {
